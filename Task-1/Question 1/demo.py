@@ -1,20 +1,3 @@
-# out_n = 0
-# done = False
-# with open("onelinefile.txt") as in_file:
-#     while not done: #loop over output file names
-#         with open(f"out{out_n}.txt", "w") as out_file: #generate an output file name
-#             while not done: #loop over lines in inuput file and write to output file
-#                 try:
-#                     line = next(in_file).strip() #strip whitespace for consistency
-#                 except StopIteration:
-#                     done = True
-#                     break
-#                 if "SPLIT" in line: #more robust than 'if line == "SPLIT\n":'
-#                     break
-#                 else:
-#                     out_file.write(line + '\n') #must add back in newline because we stripped it out earlier 
-#             out_n += 1 #increment output file name integer
-
 import csv
 
 def ReadText( textfile ) :
